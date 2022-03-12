@@ -3,40 +3,47 @@
 
 @media only screen and (min-width:46.25em) and (max-width:63.9375em) {
 
-    .grid__col-2 {
-        height: 56px;
-        width: 100%;
-    }
-    
     .grid__col-2-4 {
         width: 33.333%;
     }
 
-    .category {
-        display: flex;
+    .header {
+        height: calc(var(--header-height) + 46px);
+        top: 0;
     }
 
-    .category-list {
-        display: flex;
-        align-items: center;
+    .app__content {
+        margin-top: calc(var(--header-height) + 46px);
+        margin-right: 0;
     }
 
-    .category__heading {
-        font-size: 1.4rem;
+    .sidebar-category {
+        top: 15%;
+        width: 250px;
     }
-
-    .category-item {
-        padding: 0 12px;
-    }
-
+    
 }
 
 /* Mobile & Tablet */
 
 @media screen and (max-width: 63.9375em) {
 
+    .grid__col-2 {
+        display: none;
+    }
+
     .grid__col-10 {
         width: 100%;
+    }
+
+    .header {
+        max-width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .home-filter__mobile {
+        display: block;
     }
 
     .header-with-search {
@@ -49,7 +56,7 @@
     }
 
     .home-filter {
-        width: 100%;
+        display: none;
     }
 
     .home-filter__page {
@@ -82,11 +89,21 @@
 @media only screen and (max-width:46.1875em) {
 
     .header {
-        height: var(--header-with-search-height);
+        height: calc(var(--header-with-search-height) + 46px);
+        top: 0;
+    }
+
+    .app__content {
+        margin-top: calc(var(--header-with-search-height) + 46px);
+        margin-right: 0;
     }
 
     .navbar {
         display: none;
+    }
+
+    .filter__mobile-search {
+        display: block;
     }
 
     .header__logo {
@@ -101,22 +118,10 @@
         min-width: 54px;
     }
 
-    .header__search-select {
-        display: none;
-    }
-
+    
     .header__search-btn {
-        height: 30px;
-        min-width: 30px;
-    }
-
-    .btn-filter {
-        height: 28px;
-        min-width: 74px;
-    }
-
-    .select-input {
-        display: none;
+        height: 40px;
+        min-width: 40px;
     }
 
     .grid__col-2 {

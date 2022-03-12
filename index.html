@@ -145,10 +145,10 @@
                     </ul>
                     <ul class="navbar__list-mobile">
                         <li class="navbar__list-item-mobile navbar__list-item--has-notify">
-                            <a href="" class="navbar__list-item-link">
+                            <span class="navbar__list-item-link">
                                 <i class="navbar_icon fa-regular fa-bell"></i>
                                 Thông báo
-                            </a>
+                            </span>
                             <div class="navbar__notify-mobile">
                                 <header class="notify-header">
                                     <h3>Thông báo mới nhận</h3>
@@ -216,7 +216,7 @@
 
                     </ul>
                 </nav>
-
+                
                 <!-- Header with search -->
                 <div class="header-with-search">
                     <div class="header__logo">
@@ -342,6 +342,100 @@
                     
                 </div>
             </div>
+
+            <div class="home-filter__mobile">
+                <div class="category-filter__mobile">
+                    <label for="sidebar-mobile-input" class="category-mobile">
+                        <span   class="category-mobile__link">
+                            <i class="fa-regular fa-window-maximize"></i>
+                        </span>
+                    </label>
+                    <input hidden type="checkbox" name="" class="sidebar__input" id="sidebar-mobile-input">
+                    <nav class="sidebar-category">
+                        <h3 class="category__heading">Danh Mục</h3>
+                        <label for="sidebar-mobile-input" class="sidebar__mobile-close">
+                            <svg fill="#000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"/></svg>
+                        </label>
+    
+                        <ul class="category-list">
+                        <li class="category-item category-item--active">
+                            <a href="#" class="category-item__link">Trang điểm mặt </a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">Trang điểm môi</a>
+                        </li>
+                        <li class="category-item">
+                            <a href="#" class="category-item__link">Trang điểm mắt</a>
+                        </li>
+                        </ul>
+                    </nav>
+
+                    <ul class="filter__mobile-list">
+                        <li class="filter__mobile-item">
+                            <a href="" class="filter__mobile-link">
+                                Phổ biến
+                            </a>
+                        </li>
+                        <li class="filter__mobile-item">
+                            <a href="" class="filter__mobile-link">
+                                Mới nhất
+                            </a>
+                        </li>
+                        <li class="filter__mobile-item">
+                            <a href="" class="filter__mobile-link">
+                                Bán chạy
+                            </a>
+                        </li>
+                        <li class="filter__mobile-item">
+                            <a href="" class="filter__mobile-link">
+                                Giá
+                            </a>
+                        </li>
+                    </ul>
+
+                    <label for="search-mobile-input" class="filter__mobile-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <input hidden type="checkbox" name="" class="search__input" id="search-mobile-input">
+
+                    <div class="header__search-mobile--box">
+                        <div class="header__search-mobile">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Nhập tìm kiếm sản phẩm">
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Kem dưỡng da</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Kem trị mụn</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__search-select">
+                                <span class="header__search-select-label">Trong Shop</span>
+                                <i class="header__search-select-icon fa-solid fa-angle-down"></i>
+    
+                                <ul class="header__search-option">
+                                    <li class="header__search-option-item header__search-option-item--active">
+                                        <span>Trong shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="header__search-option-item">
+                                        <span>Ngoài shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+             </div>
         </header>
         <!-- End: Header -->
 
@@ -352,7 +446,6 @@
                     <div class="grid__col-2">
                         <nav class="category">
                             <h3 class="category__heading">Danh Mục</h3>
-            
                             <ul class="category-list">
                                 <li class="category-item category-item--active">
                                     <a href="#" class="category-item__link">Trang điểm mặt </a>
